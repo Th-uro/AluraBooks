@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__menu-hamburger {
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/images/Menu.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container__imagem {
+  padding: 1em;
+}
