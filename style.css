@@ -1,20 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
 :root {
   --cor-de-fundo: #EBECEE;
   --branco: #FFFFFF;
   --laranja: #EB9B00;
   --color-itens: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: 'Poppins', sans-serif;
 }
 
 body {
   background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .container {
@@ -39,6 +35,10 @@ body {
   background-position: center;
 }
 
+.container__botao {
+  display: none;
+}
+
 .lista-menu {
   display: none;
   position: absolute;
@@ -52,6 +52,7 @@ body {
 
 .lista-menu__titulo {
   color: var(--laranja);
+  font-weight: 700;
 }
 
 .lista-menu__link {
