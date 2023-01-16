@@ -9,6 +9,8 @@
 :root {
   --cor-de-fundo: #EBECEE;
   --branco: #FFFFFF;
+  --laranja: #EB9B00;
+  --color-itens: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 }
 
 body {
@@ -25,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .cabecalho__menu-hamburger {
@@ -34,6 +37,35 @@ body {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+}
+
+.container__botao:checked~.lista-menu {
+  display: block;
+}
+
+.lista-menu__titulo {
+  color: var(--laranja);
+}
+
+.lista-menu__link {
+  background: var(--color-itens);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+
 }
 
 .container__imagem {
