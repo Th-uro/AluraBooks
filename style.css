@@ -192,3 +192,11 @@ body {
   color:var(--branco);
   font-weight: 700;
 }
+
+.ancora__escritora {
+  padding: 1em 2.7em;
+}
+
+.estrelinhas {
+  margin-bottom: 0.5em;
+}
