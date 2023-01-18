@@ -7,7 +7,7 @@
   --azul: #002F52;
 }
 
-body {
+.body {
   background-color: var(--cor-de-fundo);
   font-family: var(--fonte-principal);
   font-size: 16px;
@@ -73,7 +73,7 @@ body {
 }
 
 .container__imagem {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 /* ----------- BANNER ----------*/
@@ -188,13 +188,13 @@ body {
 
 .botoes__ancora {
   background-color: var(--laranja);
-  padding: 1em 2.2em;
+  padding: 1em 1.7em;
   color:var(--branco);
   font-weight: 700;
 }
 
 .ancora__escritora {
-  padding: 1em 2.7em;
+  padding: 1em 2.2em;
 }
 
 .estrelinhas {
@@ -231,4 +231,56 @@ body {
   background-color: var(--laranja);
   font-size: 14px;
   font-weight: 700;
+}
+
+/* ------- CONTATO -------- */
+
+.contato {
+  background-color: var(--branco);
+  padding: 1em;
+}
+
+.contato__titulo{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contato__texto{
+  font-weight: 300;
+  margin: 1em 0;
+}
+
+.contato__titulo, .contato__texto {
+  background: var(--color-itens);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contato__email {
+  padding: 1em;
+  border: 1px solid var(--azul);
+  border-radius: 24px;
+  width: 90%;
+  color: var(--azul);
+}
+
+.contato__email::placeholder {
+  font-family: var(--fonte-principal);
+  color: var(--azul);
+  background: url(/assets/images/Email.svg) no-repeat;
+  padding-left: 2em;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ------- FOOTER -------- */
+
+hr {
+  margin: 0;
+}
+
+.rodape {
+  background-color: var(--branco);
+  padding: 1em;
 }
