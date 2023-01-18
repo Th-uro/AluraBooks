@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+*{
+    text-decoration: none;
+}
+
 html,
 body,
 div,

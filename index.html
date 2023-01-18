@@ -95,38 +95,72 @@
 
     <section class="carrossel">
       <h2 class="carrossel__titulo">Novos Lançamentos</h2>
-    </section>
 
-    <div class="swiper">
-      <div class="swiper-pagination"></div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="/assets/images/ApacheKafka.png"
-            alt="Livro sobre ApacheKafka"
-          />
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="/assets/images/ApacheKafka.png"
+              alt="Livro sobre ApacheKafka"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/images/Liderança.png"
+              alt="Livro sobre liderança"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/images/Javascript.png"
+              alt="Livro sobre Javascript"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/Guia Front-end.png" alt="Guia Front-End" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/Portugol.png" alt="Livro sobre Portugol" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="/assets/images/Liderança.png" alt="Livro sobre liderança" />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="/assets/images/Javascript.png"
-            alt="Livro sobre Javascript"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/images/Guia Front-end.png" alt="Guia Front-End" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/images/Portugol.png" alt="Livro sobre Portugol" />
-        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <h3 class="descricao__titulo">
+              Talvez você também se interesse por...
+            </h3>
+            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descricao__texto">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+          </div>
+          <img src="/assets/images/Angular-1.png" alt="" />
+        </div>
 
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="/assets/images/Favoritos.svg" alt="Favoritar Livro" />
+            </li>
+            <li class="botoes__item">
+              <img
+                src="/assets/images/Compras.svg"
+                alt="Adicionar no carrinho de compras"
+              />
+            </li>
+          </ul>
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+
+      </div>
+      
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
