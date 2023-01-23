@@ -54,6 +54,14 @@
   display: none;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburger {
+  background-image: url(/assets/images/Menu\ Aberto.png);
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul);
+}
+
 .lista-menu {
   display: none;
   position: absolute;
@@ -358,6 +366,23 @@ hr {
 
   .opcoes__botao {
     display: none;
+  }
+
+  .opcoes__botao:checked ~.opcoes__rotulo > .opcoes__item {
+    background: var(--azul);
+    color: var(--branco);
+  }
+
+  .opcoes__item {
+    padding: 2em 1em;
+  }
+
+  .lista-menu__item:hover {
+    background: var(--color-itens);
+  }
+
+  .lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
   }
 
   /* ------- BANNER -------- */
